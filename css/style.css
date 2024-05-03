@@ -55,7 +55,7 @@ header>h1 {
 
 }
 
-header>p {
+header>p,a {
     color: white;
     font-family: var(--fonte-padrão);
     font-size: 1.2em;
@@ -66,7 +66,28 @@ header>p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.753);
     text-align: center;
     padding: 10px;
+  
 }
+
+.amigo a{
+    text-decoration:  none;
+    font-size: 16px;
+    background-color: #063d1e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.amigo a:hover{
+    text-decoration: underline;
+    background-color: #2fa866;
+}
+
+.amigo{
+    font-size: 16px;
+   
+
+}
+
 
 nav {
     background-color: var(--cor5);
@@ -204,7 +225,7 @@ footer {
     padding: 5px;
 }
 
-footer a {
+footer a  {
     color: white;
     text-decoration: none;
 }
@@ -212,4 +233,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
+}
+
+.amigo{
+    color: white;
+    text-decoration: none;
 }
