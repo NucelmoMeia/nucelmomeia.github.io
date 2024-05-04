@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 @font-face {
@@ -20,17 +21,17 @@
     --fonte-destaque: 'Bebas  Neue' cursive;
     --fonte-android: 'Android', cursive;
 }
+
 /*Aqui é a parte das gerais*/
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px solid red;
+    border: 1px solid red; /* Apenas para visualização de bordas */
 }
 
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrão);
-
 }
 
 header {
@@ -48,10 +49,10 @@ header>h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.753);
     font: bold;
     text-align: center;
-
 }
 
-header>p,a {
+header>p,
+header>a {
     color: white;
     font-family: var(--fonte-padrão);
     font-size: 1.2em;
@@ -62,28 +63,24 @@ header>p,a {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.753);
     text-align: center;
     padding: 10px;
-  
 }
 
-.amigo a{
-    text-decoration:  none;
+.amigo a {
+    text-decoration: none;
     font-size: 16px;
     background-color: var(--cor5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
 }
 
-.amigo a:hover{
+.amigo a:hover {
     text-decoration: underline;
     background-color: #2fa866;
 }
 
-.amigo{
+.amigo {
     font-size: 16px;
-   
-
 }
-
 
 nav {
     background-color: var(--cor5);
@@ -117,44 +114,48 @@ nav a:hover {
     border-bottom-right-radius: 10px;
 }
 
-
-
-section{
+section {
     margin: 20px;
     padding: 10px;
     background-image: linear-gradient(to right, var(--cor1) 70%, transparent);
 }
 
-.section-1>h1{
+aside {
+    background-color: var(--cor1);
     padding: 10px;
-    font-family: var(--fonte-destaque);
-    color: white;
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, var(--cor5), transparent);
-    text-indent: 8px;
-    font-weight: bold;
-    
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.276);
+    max-width: 1000px;
+    min-width: 500px;
 }
 
-.section-1>img{
-    width: 500px;
-    padding: 20px;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, var(--cor1),var(--cor3) , var(--cor0) ,transparent);
-    margin: 20px;
-}
-.section-1>p{
-    position: relative;
-    bottom: 300px;
-    left: 580px;
-    text-align: justify;
-    width: 301px;
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
     padding: 10px;
-    font-size: 20px;
-    background-color: #3ddc856b;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+aside h4 {
+    background-image: linear-gradient(to right, var(--cor1) 70%, transparent);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
     border-radius: 10px;
-    color: var(--cor5);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+aside img {
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 footer {
@@ -163,11 +164,10 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
- 
 }
 
-footer a  {
-    text-decoration:  none;
+footer a {
+    text-decoration: none;
     font-size: 13px;
     background-color: var(--cor5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -178,3 +178,79 @@ footer a:hover {
     text-decoration: underline;
     background-color: var(--cor2);
 }
+
+/* Adiciona regras de mídia para dispositivos menores */
+@media screen and (max-width: 768px) {
+    header {
+        min-height: 100px;
+        padding-top: 20px;
+    }
+
+    header>h1 {
+        font-size: 1.5em;
+    }
+
+    header>p,
+    header>a {
+        font-size: 1em;
+        max-width: 80%;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    #main_3 {
+        padding: 10px;
+    }
+
+    aside {
+        min-width: 300px;
+    }
+
+    aside img {
+        max-width: 100%;
+    }
+}
+
+/* Adiciona regras de mídia para dispositivos ainda mais menores */
+@media screen and (max-width: 500px) {
+    header {
+        min-height: 80px;
+        padding-top: 10px;
+    }
+
+    header>h1 {
+        font-size: 1.2em;
+    }
+
+    header>p,
+    header>a {
+        font-size: 0.8em;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    #main_3 {
+        padding: 10px;
+    }
+
+    aside {
+        min-width: 300px;
+    }
+
+    aside img {
+        width: 120px;
+        margin: 0 auto;
+    }
