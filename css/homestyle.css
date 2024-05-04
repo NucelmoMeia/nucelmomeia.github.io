@@ -104,4 +104,61 @@ nav a:hover {
     color: var(--cor5);
 }
 
+#main_3 {
+    display: grid;
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
+#main_header {
+    text-align: center;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+.main_3_div {
+    margin: 0 15px;
+    width: 100%;
+    background-color: var(--cor4);
+}
+
+#main_3_section {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main_3_logo {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media (max-width:992px) {
+    #main_3_section {
+        flex-wrap: wrap;
+    }
+}
+
+.main_3_div {
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.titulo{
+    color: white;
+    font-size: 30px;
+    background-color: var(--cor4);
+    font-family:var(--fonte-destaque) ;
+    border-radius: 10px;
+}
