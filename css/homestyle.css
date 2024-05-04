@@ -24,7 +24,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -68,7 +68,7 @@ header>p,a {
 .amigo a{
     text-decoration:  none;
     font-size: 16px;
-    background-color: #063d1e;
+    background-color: var(--cor5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
 }
@@ -117,48 +117,64 @@ nav a:hover {
     border-bottom-right-radius: 10px;
 }
 
-#main_header {
-    text-align: center;
-    padding: 25px;
-    font-family: sans-serif;
-}
 
-.main_3_div {
-    margin: 0 15px;
-    width: 100%;
-    background-color: var(--cor4);
-}
 
-#main_3_section {
+section{
     margin: 20px;
-    display: flex;
-    justify-content: space-between;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor1) 70%, transparent);
+}
+
+.section-1>h1{
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    text-indent: 8px;
+    font-weight: bold;
     
 }
 
-.main_3_logo {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-@media (max-width:992px) {
-    #main_3_section {
-        flex-wrap: wrap;
-    }
-}
-
-.main_3_div {
-    color: white;
-    border-radius: 20px;
+.section-1>img{
+    width: 500px;
     padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--cor1),var(--cor3) , var(--cor0) ,transparent);
+    margin: 20px;
+}
+.section-1>p{
+    position: relative;
+    bottom: 300px;
+    left: 580px;
+    text-align: justify;
+    width: 301px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #3ddc856b;
+    border-radius: 10px;
+    color: var(--cor5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-.titulo{
+footer {
+    background-color: var(--cor5);
     color: white;
-    font-size: 30px;
-    background-color: var(--cor4);
-    font-family:var(--fonte-destaque) ;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+ 
+}
+
+footer a  {
+    text-decoration:  none;
+    font-size: 13px;
+    background-color: var(--cor5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: var(--cor2);
 }
