@@ -116,6 +116,46 @@ nav a:hover {
     border-bottom-right-radius: 10px;
 }
 
+#paragrafo{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+    background-image: linear-gradient(to right, var(--cor1) 70%, transparent);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#paragrafo a{
+    text-decoration: none;
+    background-color: #24ce6e;
+    color: white;
+    border-radius: 10px;
+    animation: anim_a 1s infinite ease-out;
+}
+
+@keyframes anim_a{
+    0%{
+    background-color: white;
+    font-size: 30px;
+}
+
+20%{
+    background-color: var(--cor4);
+}
+}
+
+#paragrafo a:hover{
+    text-decoration: none;
+    background-color: white;
+    color:  #24ce6e;
+    border-radius: 10px;
+    
+}
+
 section {
     margin: 20px;
     padding: 10px;
@@ -127,8 +167,10 @@ aside {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.276);
-    max-width: 1000px;
-    min-width: 500px;
+ max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
 }
 
 aside h3 {
@@ -138,6 +180,7 @@ aside h3 {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
 }
 
 aside h4 {
@@ -150,22 +193,9 @@ aside h4 {
     border-radius: 10px;
     max-width: 400px;
     min-width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
 }
 
-aside h5{
-    background-image: linear-gradient(to right, var(--cor3) 70%, transparent);
-    color: white;
-    padding: 10px;
-    margin: 10px -10px 10px -10px;
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 400px;
-    min-width: 200px;
-    position: relative;
-    right: -530px;
-    bottom: -150px;
-}
 
 aside h4:hover{
     background-image: linear-gradient(to right, var(--cor4) 70%, transparent);
@@ -174,11 +204,6 @@ aside h4:hover{
 }
 
 
-aside h5:hover{
-    background-image: linear-gradient(to right, var(--cor4) 70%, transparent);
-    padding: 5px;
-    transition-duration: 2s;
-}
 
 aside img {
     padding: 10px;
@@ -188,6 +213,7 @@ aside img {
     min-width: 300px;
     background-color: #063d1e;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
 
 }
 
@@ -207,14 +233,17 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
 }
 
 footer a {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     background-color: var(--cor5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
 }
 
 footer a:hover {
@@ -223,7 +252,7 @@ footer a:hover {
 }
 
 /* Adiciona regras de mídia para dispositivos menores */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     header {
         min-height: 100px;
         padding-top: 20px;
@@ -258,6 +287,8 @@ footer a:hover {
     aside img {
         max-width: 100%;
     }
+
+
 }
 
 /* Adiciona regras de mídia para dispositivos ainda mais menores */
@@ -296,4 +327,5 @@ footer a:hover {
     aside img {
         width: 120px;
         margin: 0 auto;
+        } 
 }
