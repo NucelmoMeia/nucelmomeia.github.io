@@ -120,7 +120,6 @@ nav a:hover {
     font-size: 25px;
     text-align: center;
     margin: 0 auto;
-    background-color: ;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
     background-image: linear-gradient(to right, var(--cor1) 70%, transparent);
     border-radius: 10px;
